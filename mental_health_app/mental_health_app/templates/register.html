@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charet="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Registering page for the mental health app.">
+        <title>Register</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <h2>Create a New Account</h2>
+    
+            <form method="post" action="{% url 'register' %}">
+    
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password1">Password:</label>
+                    <input type="password" id="password1" name="password1" class="form-control" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password2">Confirm Password:</label>
+                    <input type="password" id="password2" name="password2" class="form-control" required>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+    
+            <p>Already have an account? <a href="./login.html">login</a>.</p>
+        </main>
+    </body>
+</html>

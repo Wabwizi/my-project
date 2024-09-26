@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charet="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mood statistics in the mental health app.">
+        <title>Mood Statistics</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+
+    <body>
+        <header></header>
+
+        <main>
+            
+<h2>Mood Statistics</h2>
+
+<h3>Your Mood Breakdown</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Mood</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+            <td>{{ entry.mood }}</td>
+            <td>{{ entry.count }}</td>
+        </tr>
+       
+    </tbody>
+</table>
+
+<h3>Your Latest Mood: {{ latest_mood.mood }}</h3>
+<p>{{ latest_mood.mood_note }}</p>
+
+<h3>Suggestions for You</h3>
+<ul>
+        <li>{{ suggestion }}</li>
+   </ul>
+   <a href="login.html" class="logout">Logout</a>
+
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

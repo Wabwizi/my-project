@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charet="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mood tracking in the mental health app.">
+        <title>Mood Tracking</title>
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+
+    <body>
+        <header></header>
+        <main>
+            <h2>Track Your Mood</h2>
+
+<form method="post" action="{ 'track_mood' }">
+    
+    <div class="form-group">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" name="mood" class="form-control" required>
+            <option value="">Select your mood</option>
+            <option value="happy">Happy 😊</option>
+            <option value="excited">Excited 😃</option>
+            <option value="relaxed">Relaxed 😌</option>
+            <option value="neutral">Neutral 😐</option>
+            <option value="stressed">Stressed 😰</option>
+            <option value="anxious">Anxious 😟</option>
+            <option value="sad">Sad 😢</option>
+            <option value="angry">Angry 😡</option>
+            <option value="frustrated">Frustrated 😖</option>
+            <option value="tired">Tired 😴</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="mood_note">Additional Comments (optional):</label>
+        <textarea id="mood_note" name="mood_note" class="form-control" rows="4" placeholder="Describe anything specific about how you're feeling..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
+
+
+
